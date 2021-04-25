@@ -11,12 +11,12 @@
 	<h1>Hello!</h1>
 
 	<p>
-	<p>This is a <font color="blue">Blue Parallelogram</font>.
+	<p>This is a <font color="blue">Brown Parallelogram</font>.
 	<p>
 	<p>
 <svg width="2000" height="2000">
 <polygon points="150 150, 100 200, 200 200, 250 150"
-style="stroke: #0000FF; stroke-width: 5; stroke-linejoin:round; fill:blue"/>
+style="stroke: #0000FF; stroke-width: 5; stroke-linejoin:round; fill:brown"/>
 </svg>
 </font>
 </body>

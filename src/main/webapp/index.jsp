@@ -31,6 +31,9 @@
         <li><a href="Pentagon.jsp">Pentagon</a></li>
         <li><a href="Hexagon.jsp">Hexagon</a></li>
         <li><a href="Rhombus.jsp">Hexagon</a></li>
+        <li><a href="Octagon.jsp">Circle</a></li>
+        <li><a href="Parallelogram.jsp">Circle</a></li>
+
     </ol>
     <br>
 	<br>

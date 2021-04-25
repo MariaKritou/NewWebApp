@@ -12,7 +12,7 @@
     <p>This is a <font color="orange">Orange Rhombus</font>.
     <p>
     <p>
-    <svg viewBox="0 0 13 14"><path class="rhombus" d="M5.9,1.2L0.7,6.5l5.2,5.4l5.2-5.4L5.9,1.2z" style="fill:lime;stroke:brown;stroke-width:1" /></svg>
+    <svg viewBox="0 0 13 14"><path class="rhombus" d="M5.9,1.2L0.7,6.5l5.2,5.4l5.2-5.4L5.9,1.2z" style="fill:lime;stroke:black;stroke-width:1" /></svg>
 </font>
 </body>
 </html>

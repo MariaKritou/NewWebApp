@@ -16,7 +16,7 @@
 	<p>
 <svg width="2000" height="2000">
 <polygon points="150 150, 100 200, 200 200, 250 150"
-style="stroke: #0000FF; stroke-width: 5; stroke-linejoin:round; fill:brown"/>
+style="stroke: #0000FF; stroke-width: 5; stroke-linejoin:round; fill:green"/>
 </svg>
 </font>
 </body>

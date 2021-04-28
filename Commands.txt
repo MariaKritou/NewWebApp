@@ -1,0 +1,78 @@
+CASE COURSEWROK COMMANDS 
+
+=========CMD 1==========
+
+
+ssh -i "CaseCoursework.pem" ubuntu@ec2-18-195-51-169.eu-central-1.compute.amazonaws.com
+
+sudo apt-get update
+
+sudo apt-get install default-jdk
+
+cd /opt
+
+(version 10.0.5 cause it was updated)
+sudo wget https://downloads.apache.org/tomcat/tomcat-10/v10.0.5/bin/apache-tomcat-10.0.5.tar.gz
+
+sudo tar -xvzf apache-tomcat-10.0.5.tar.gz
+
+sudo su
+
+cd /opt/apache-tomcat-10.0.5
+
+(to change port)
+nano conf/server.xml
+
+exit
+
+sudo ln -s /opt/apache-tomcat-10.0.5/bin/startup.sh /usr/local/bin/start_tomcat
+
+sudo ln -s /opt/apache-tomcat-10.0.5/bin/shutdown.sh /usr/local/bin/stop_tomcat
+
+sudo start_tomcat
+
+sudo apt-get install language-pack-en
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+
+echo "deb https://pkg.jenkins.io/debian binary/"
+
+sudo apt-get update
+
+sudo apt-get install jenkins
+
+sudo systemctl start jenkins
+
+sudo systemctl status jenkins
+
+sudo apt-get install apache2
+
+sudo apt-get install default-jre
+
+sudo apt-get install maven
+
+sudo apt-get install git
+
+sudo apt-get install update
+
+javac -version
+
+mvn -version
+
+git --version
+
+
+=========CMD 2==========
+
+ssh -i "CaseCoursework.pem" ubuntu@ec2-18-198-25-99.eu-central-1.compute.amazonaws.com
+
+sudo su
+
+cd /var/lib/jenkins/secrets/
+
+nano initialAdminPassword
+
+copied jenkins code and pasted to jenkins from instance
+
+
+

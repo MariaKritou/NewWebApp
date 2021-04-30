@@ -1,11 +1,5 @@
 pipeline {
     agent any
-    
-          stage('Clone repository') {
-        /* Cloning the Repository to our Workspace */
-
-        checkout scm
-    }
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
@@ -14,6 +8,12 @@ pipeline {
     
 
     stages {
+        
+      stage('Clone repository') {
+        /* Cloning the Repository to our Workspace */
+
+        checkout scm
+    }
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository

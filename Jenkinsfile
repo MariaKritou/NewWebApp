@@ -1,7 +1,7 @@
 pipeline {
   environment {
     imagename = "docker image name"
-    registryCredential = 'docker credential'
+    registryCredential = 'docker_credential'
     dockerImage = ''
   }
   agent any

@@ -1,18 +1,19 @@
 pipeline {
     agent any
+    
+          stage('Clone repository') {
+        /* Cloning the Repository to our Workspace */
+
+        checkout scm
+    }
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
         maven "M3"
     }
+    
 
     stages {
-      
-        stage('Clone repository') {
-        /* Cloning the Repository to our Workspace */
-
-        checkout scm
-    }
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
@@ -32,8 +33,9 @@ pipeline {
                     archiveArtifacts 'target/*.jar'
                 }
             }
+        }
           
-            stage('Build image') {
+      stage('Build image') {
         /* This builds the actual image */
 
         app = docker.build("mariakritou/casecoursework")
@@ -49,4 +51,4 @@ pipeline {
     } 
         }
     }
-}
+
